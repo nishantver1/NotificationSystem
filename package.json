@@ -1,0 +1,28 @@
+{
+  "name": "notification-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "worker": "tsx src/worker.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "bullmq": "^6.3.4",
+    "express": "^5.2.1",
+    "ioredis": "^6.0.0",
+    "uuid": "^14.0.2"
+  }
+}
